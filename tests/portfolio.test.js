@@ -30,6 +30,8 @@ test('portfolio exposes its required interactive sections', () => {
   for (const interaction of ['setSelected', 'runCommand', 'scrollTo', 'setHoveredTech']) {
     assert.match(app, new RegExp(interaction))
   }
+
+  assert.match(app, /https:\/\/krishi-lens\.vercel\.app\/login/)
 })
 
 test('local assets and deployment metadata are present', () => {
