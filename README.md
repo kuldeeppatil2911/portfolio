@@ -85,14 +85,15 @@ Open the local URL shown by Vite, normally `http://localhost:5173/`.
 
 ## Testing and Verification
 
-There is currently no automated test suite. The available checks are:
+The repository includes automated smoke tests for the static application. The available checks are:
 
 ```bash
+npm test
 npm run lint
 npm run build
 ```
 
-These validate the source with Oxlint and verify that Vite can produce the production bundle.
+The tests verify the production build, required content and interactions, local assets, documentation, and the absence of tracked secret files. Oxlint validates the source and Vite verifies the production bundle.
 
 ## Production Build
 
