@@ -31,7 +31,7 @@ test('portfolio exposes its required interactive sections', () => {
     assert.match(app, new RegExp(interaction))
   }
 
-  assert.match(app, /https:\/\/krishi-lens\.vercel\.app\/login/)
+  assert.match(app, /https:\/\/plant-ai-api-1\.onrender\.com/)
 })
 
 test('local assets and deployment metadata are present', () => {
